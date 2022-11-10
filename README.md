@@ -10,13 +10,13 @@ node server.js
 ```
 
 ## test
-### GET `http://localhost:8888/data/api/v1/getMarketConfig`
+### GET `http://localhost:8888/v4/order/:orderId`
 
-### GET `http://localhost:8888/data/api/v1/getKLine`
-> Params: `market=btc_usdt&type=15min&since=0`
+### GET `http://localhost:8888/v4/order`
+> Params: `orderId=156201996458139136`
 
-### GET `http://localhost:8888/data/api/v1/getTicker`
-> Params: `market=btc_usdt`
+### POST `http://localhost:8888/v4/order`
+> Params: `{"symbol":"XT_USDT","side":"BUY","bizType":"SPOT","quantity":2,"price":3,"type":"LIMIT","timeInForce":"GTC"}`
 
 ### GET `http://localhost:8888/data/api/v1/getTickers`
 
